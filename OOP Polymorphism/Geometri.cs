@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace OOP_Polymorphism
 {
-    class Tekning
+    public class Geometri
     {
         protected double area;
         protected double Pi { get; set; }
 
-        public Tekning()
+        public Geometri()
         {
             Pi = 3.14;
         }
@@ -19,11 +19,6 @@ namespace OOP_Polymorphism
         public virtual double Area()
         {
             return area;
-        }
-
-        public virtual void PrintInfo()
-        {
-            Console.WriteLine("Area Tekning: " + area);
         }
     }
 }

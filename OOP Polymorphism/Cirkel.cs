@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OOP_Polymorphism
 {
-    class Cirkel : Tekning
+    class Cirkel : Geometri
     {
         protected double Radius { get; set; }
 
@@ -20,11 +20,6 @@ namespace OOP_Polymorphism
         {
             double area = Radius * Radius * Pi;
             return area;
-        }
-
-        public override void PrintInfo()
-        {
-            Console.WriteLine("Area Cirkel: " + area);
         }
     }
 }

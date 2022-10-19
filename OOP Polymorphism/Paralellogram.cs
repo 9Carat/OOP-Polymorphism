@@ -6,18 +6,20 @@ using System.Threading.Tasks;
 
 namespace OOP_Polymorphism
 {
-    public class Fyrkant : Geometri
+    internal class Paralellogram : Geometri
     {
-        public double Side { get; set; }
+        public double Length { get; set; }
+        public double Height { get; set; }
 
-        public Fyrkant()
+        public Paralellogram()
         {
-            Side = 8;
+            Length = 7;
+            Height = 4;
         }
 
         public override double Area()
         {
-            double area = Math.Pow(Side, 2);
+            double area = Length * Height;
             return area;
         }
     }

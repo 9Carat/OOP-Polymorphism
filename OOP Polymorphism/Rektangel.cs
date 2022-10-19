@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OOP_Polymorphism
 {
-    class Rektangel : Tekning
+    class Rektangel : Geometri
     {
         protected double Length { get; set; }
         protected double Width { get; set; }
@@ -22,11 +22,6 @@ namespace OOP_Polymorphism
         {
             double area = Width * Length;
             return area;
-        }
-
-        public override void PrintInfo()
-        {
-            Console.WriteLine("Area Rektangel: " + area);
         }
     }
 }
